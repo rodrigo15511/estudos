@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Inicio HEADER*/
+.nav{
+    background-color:#181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 24px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+.nav-list a:hover{
+    color: #fff;
+}
+/* Fim do HEADER */
+
+/* INICIO MAIN */
+.main{
+    width: 100%;
+    background-color: #181818;
+    height: calc(100vh - 80px);
+    background-image: url("images/programador.png");
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.main h1{
+    color: #fff;
+    font-size: 24px;
+}
+.main p {
+    font-size: 24px;
+    color: #1e96f6;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.call-to-action{
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+.main{
+    text-decoration:  none;
+    color: #181818;
+}
+/* FIM MAIN */
+/* INICIO ABOUT */
+.about{
+    background-color: #fff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+.about img{
+    max-width: 430px;
+    border-radius: 8px;
+}
+.about h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/* FIM DO ABOUT */
+/* INICIO PROJECT */
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+.projects h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20 px;
+}
+.projects p {
+    margin-bottom: 40px;
+    font-size: italic;
+}
+.project-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects img{
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+.projects img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.action{
+    background-color: #181818;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 18px;
+    cursor: pointer;
+}
+/* FIM PROJECTS */
+/* INICIO RODAPE */
+footer{
+    width: 100%;
+    background-color: #181818;
+    color: #fff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer p {
+    margin-left: 12px;
+}
+
+/* FIM RODAPE */
+
+/* Responsividade */
+
+@media (max-widht : 1050px){
+    /* inicio main */
+    .main h1{
+        font-size: 20px;
+    }
+    .main p{
+        font-size: 20px;
+    }
+    .main{
+        background-size: cover;
+    }
+}

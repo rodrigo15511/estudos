@@ -1,0 +1,40 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: #f4f4f4;
+    width: 700px;
+    color: #851e1e;
+
+    margin: auto; /* centralizar */
+    /* padding: espacamento interno */
+    padding: 50px;
+    border: 5px solid blue;
+    border-radius: 12px;
+}
+.rede-social h2{
+    text-align: center;
+}
+.rede-social ul {
+    padding:0;
+    list-style:none;
+    text-align: center
+}
+.rede-social li{
+    margin-bottom: 12px;
+}
+.rede-social a{
+    text-decoration: none;
+    color: black;
+}
+.rede-social a:hover{
+    color: red;
+}

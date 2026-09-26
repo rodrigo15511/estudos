@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+.env
+.env.local
+__pycache__/
+*.pyc
+.venv/
+.idea/
+*.iml
+out/
+target/
+*.class
+*.db
