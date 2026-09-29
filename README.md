@@ -26,6 +26,7 @@ A ideia deste repositório não é mostrar código perfeito. É mostrar a evolu�
 - **`fundamentos-1sem/`**: classes, objetos e atributos de referência
 - **`exercicios-2sem/`**: vetores, `ArrayList` e entidades (provas e treinos)
 - **`estudos-poo/`**: orientação a objetos, herança, tratamento de exceções, conexão com banco Oracle via JDBC e consumo de API REST
+- **`api-simpsons/`** 🚧: consumo da The Simpsons API com HttpClient e Gson (em andamento)
 
 ## 🌐 Web
 
