@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+@SistemaEscolarAPI_HostAddress = http://localhost:5153
+=======
+@SistemaEscolarAPI_HostAddress = http://localhost:5210
+>>>>>>> 22948f10f6d138c58abc0ec39f65248b8aa58081
+
+GET {{SistemaEscolarAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

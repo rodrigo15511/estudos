@@ -12,3 +12,8 @@ out/
 target/
 *.class
 *.db
+
+# C# / .NET
+bin/
+obj/
+.vs/

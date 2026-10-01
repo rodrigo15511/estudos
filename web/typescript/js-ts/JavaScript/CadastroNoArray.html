@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8ecef; /* Fundo cinza claro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd; /* Borda simples */
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #444;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        label {
+            font-size: 14px;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        #listaBtn {
+            background: #007bff;
+            margin-top: 20px;
+            width: 150px;
+            border-radius: 4px;
+        }
+
+        #listaBtn:hover {
+            background: #0056b3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        ul li {
+            background: #f5f5f5;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Cadastro</h1>
+        <label for="novo">Novo Cadastro</label>
+        <input type="text" name="novo" id="novo" placeholder="Digite seu nome" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <button id="listaBtn">Lista</button>
+
+    <ul id="listaCadastros"></ul>
+
+    <script>
+        let cadastros = [];
+        let form = document.querySelector('form');
+        let listaButton = document.getElementById('listaBtn');
+        let listaCadastros = document.getElementById('listaCadastros');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            let novoValor = document.getElementById('novo').value;
+            cadastros.push(novoValor);
+
+            form.reset();
+        });
+
+        listaButton.addEventListener('click', function () {
+            listaCadastros.innerHTML = ""; // Limpa a lista antes de exibir
+
+            for (let i = 0; i < cadastros.length; i++) {
+                let li = document.createElement("li");
+                li.textContent = cadastros[i];
+                listaCadastros.appendChild(li);
+            }
+        });
+    </script>
+</body>
+</html>
